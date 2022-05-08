@@ -69,9 +69,7 @@ const Books = () => {
     const [search, setSearch] = useState('')
     const dispatch = useDispatch()
 
-    useEffect(() => {
-       dispatch(fetchBook())
-    }, []);
+    dispatch(fetchBook())
 
 
     useEffect(() => {
